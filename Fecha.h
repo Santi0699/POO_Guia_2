@@ -1,7 +1,6 @@
 #ifndef FECHA_H
 #define FECHA_H
-
-#include <ctime>
+#include <iostream>
 
 class Fecha
 {
@@ -18,12 +17,16 @@ public:
     void setday(int da);
     void setmonth(int mon);
     void setyear(int ye);
+    //getters
+    int getday();
+    int getmounth();
+    int getyear();
     // E/S
     void ingresarfecha();
     void imprimir_la();
     void imprimir_us();
     void imprimir_letras();
-    const char *mesLetras();
+    const char* mesLetras();
     bool validarFecha();
     int diasEnMes(int m);
 };
